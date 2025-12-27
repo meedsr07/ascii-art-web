@@ -58,6 +58,16 @@ button {
   cursor: pointer;
   margin-top: 10px;
 }
+#result {
+  max-width: 700px;
+  width: 100%;
+  min-height: 4cm;
+  margin: 0 auto;
+  background: #264653;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
 button:hover {
   background-color: #f4a261;
@@ -89,6 +99,7 @@ button:hover {
   border-radius: 6px;
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
   body {
     padding: 10px;
