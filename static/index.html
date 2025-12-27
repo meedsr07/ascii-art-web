@@ -7,28 +7,30 @@
   <title>Ascii Art Web</title>
 </head>
 <body>
-  <h1 id="bigtitle">ASCII ART WEB</h1>
-  <form action="/ascii-art" method="POST">
-    <div>
-      <label for="input">Text:</label><br>
-      <textarea id="input" name="text" maxlength="100000" placeholder="write your text here"></textarea>
-    </div>
-    <br>
+     <h1 id="bigtitle">ASCII ART WEB</h1>
+    <form action="/ascii-art" method="POST">
 <div>
-    <p>Type of Art</p>
-    <input type="radio" id="standard" name="banner" value="standard" checked>
-    <label for="standard">standard</label><br>
-    
-    <input type="radio" id="shadow" name="banner" value="shadow">
-    <label for="shadow">shadow</label><br>
-    
-    <input type="radio" id="thinkertoy" name="banner" value="thinkertoy">
-    <label for="thinkertoy">thinkertoy</label>
+        <label for="input">Text:</label>
 </div>
-    <div>
-    <button type="submit">Generate</button>
+<br>
+<div>
+        <textarea id="input" name="text" maxlength="100000" placeholder="write your text here"></textarea>
 </div>
-  </form>
+  <div>
+        <p>Type of Art</p>
+     <input type="radio" id="standard" name="banner" value="standard" checked>
+        <label for="standard">standard</label>    
+      <input type="radio" id="shadow" name="banner" value="shadow">
+        <label for="shadow">shadow</label>
+      <input type="radio" id="thinkertoy" name="banner" value="thinkertoy">
+        <label for="thinkertoy">thinkertoy</label> 
+</div>
+  <br>
+<div>
+       <button type="submit">Generate</button>
+  </div>    
+    </form>
+ 
   <div id="result">
     <h2>Generated ASCII Art:</h2>
     <pre>{{.Art}}</pre>
