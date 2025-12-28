@@ -4,7 +4,7 @@ body {
 }
 
 #bigtitle {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: ' monospace';
   color: #264653;
   text-align: center;
   margin-bottom: 25px;
@@ -22,7 +22,7 @@ form {
 }
 
 label {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'monospace';
   font-weight: bold;
   color: #f4a261;
   display: block;
@@ -42,17 +42,15 @@ textarea {
 }
 
 input[type="radio"] {
-  margin-right: 5px;
   margin-left: 10px;
 }
 
 button {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   background-color: #e76f51;
   color: white;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
@@ -70,9 +68,6 @@ button {
   overflow-y: auto;
 }
 
-button:hover {
-  background-color: #f4a261;
-}
 #messages {
     display: flex;
     flex-direction: column;
