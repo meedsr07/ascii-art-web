@@ -40,8 +40,8 @@ func HostLauncher() {
 		}
 	})
 	http.HandleFunc("/ascii-art", ArtHandler(Art))
-	fmt.Println("Starting server on http://localhost:8080")
-	err := http.ListenAndServe(":8080", nil)
+	fmt.Println("Starting server on http://localhost:8085")
+	err := http.ListenAndServe(":8085", nil)
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -14,6 +14,8 @@ func IsValidInput(style string) bool {
 	return validStyles[style]
 }
 
+// var Temp = template.Must(template.ParseGlob("static/*.html"))
+
 var (
 	tmpl404 = template.Must(template.ParseFiles("static/404.html"))
 	tmpl400 = template.Must(template.ParseFiles("static/400.html"))
@@ -25,7 +27,8 @@ func ArtHandler(art Artstr) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodPost {
 			w.WriteHeader(http.StatusBadRequest)
-			tmpl400.Execute(w, nil)
+			// Temp.ExecuteTemplate(w, "404.html", nil)
+			tmpl400.Execute(w, nil)	
 			return
 		}
 		err := r.ParseForm()
