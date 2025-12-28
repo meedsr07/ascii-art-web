@@ -1,7 +1,6 @@
 body {
   background-color: #f4a261;
   font-family: Arial, sans-serif;
-  padding: 20px;
 }
 
 #bigtitle {
@@ -14,6 +13,7 @@ body {
 form {
   max-width: 700px;
   width: 100%;
+/* top right bottom left;*/
   margin: 0 auto 30px auto;
   background: #264653;
   padding: 20px;
@@ -26,7 +26,6 @@ label {
   font-weight: bold;
   color: #f4a261;
   display: block;
-  margin-bottom: 8px;
 }
 
 textarea {
@@ -59,14 +58,16 @@ button {
   margin-top: 10px;
 }
 #result {
-  max-width: 700px;
   width: 100%;
-  min-height: 4cm;
+  max-width: 700px;
+  min-height: 150px;
   margin: 0 auto;
   background: #264653;
   padding: 20px;
   border-radius: 8px;
   box-sizing: border-box;
+  overflow-x: auto; 
+  overflow-y: auto;
 }
 
 button:hover {
