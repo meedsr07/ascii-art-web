@@ -75,13 +75,12 @@ button {
     align-items: center;    
     min-height: 100vh;      
     font-family: monospace;
-    text-align: center;
     color: #264653;
     padding: 20px;           
 }
 #messages h1 {
-    font-size: 80px;
-    margin-bottom: 20px;
+    font-size: 123px;
+    margin-bottom: -19px;
 }
 
 #errorMessage {
